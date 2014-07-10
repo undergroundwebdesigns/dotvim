@@ -314,3 +314,7 @@ imap <F1> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <F2> :.w !pbcopy<CR><CR>
 vmap <F2> :w !pbcopy<CR><CR>
 
+" evervim
+let g:evervim_devtoken='S=s398:U=466f922:E=14e268cf5ee:C=146cedbc9a8:P=1cd:A=en-devtoken:V=2:H=01bcda68945460e38544d1f99e14fdd6'
+
+autocmd FileType gitcommit call cursor(1, 99)    
