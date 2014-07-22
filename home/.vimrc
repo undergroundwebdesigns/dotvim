@@ -317,4 +317,18 @@ vmap <F2> :w !pbcopy<CR><CR>
 " evervim
 let g:evervim_devtoken='S=s398:U=466f922:E=14e268cf5ee:C=146cedbc9a8:P=1cd:A=en-devtoken:V=2:H=01bcda68945460e38544d1f99e14fdd6'
 
+" Easymotion config
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-s2)
+
+" Turn on case sensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 autocmd FileType gitcommit call cursor(1, 99)    
