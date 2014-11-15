@@ -332,3 +332,18 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 autocmd FileType gitcommit call cursor(1, 99)    
+
+" Configure linebreaks:
+set tw=79
+set cc=+1
+set fo-=t
+
+" Smarter grep, with quickfux suppor:
+map <F4> :execute " grep -srnw --binary-files=without-match --exclude-dir=.git --exclude=*tags . -e " . expand("<cword>") . " " <bar> cwindow<CR>
+
+" vim-rspec
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
