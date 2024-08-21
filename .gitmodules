@@ -1,0 +1,6 @@
+[submodule "home/.vim/pack/addons/start/nerdtree"]
+	path = home/.vim/pack/addons/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "home/.vim/pack/addons/start/fugitive"]
+	path = home/.vim/pack/addons/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
