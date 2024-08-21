@@ -25,9 +25,6 @@
   let g:ctrlp_custom_ignore = 'node_modules\|reports'
 " }}}
 
-" Pathogen! 
-  execute pathogen#infect()
-
 " Basic settings ---------------------------- {{{
 
   " Character encoding (if this is not set, all manner of hell breaks loose when
@@ -39,7 +36,7 @@
 
   " always show the status line, which is made fancy by powerline
   setglobal laststatus=2
-  setglobal statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+  setglobal statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
   " don't show the intro message when starting vim
   " also, abbreviate a host of other messages that appear on the status line
